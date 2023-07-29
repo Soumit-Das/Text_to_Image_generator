@@ -70,6 +70,7 @@ When using the generator, you can specify the desired image size as a parameter.
 - Free OpenAI account: Up to 5 images can be generated at a time.
 - Paid OpenAI account: Up to 50 images can be generated at a time.
 - Image size options: Limited to 256x256, 512x512, and 1024x1024 pixels.
+
 Keep in mind the limitations of your OpenAI account to manage your image generation needs effectively.
 
 ## Additional Resources
