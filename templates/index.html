@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fontograph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    #container form{
+      width: 70%;
+      margin: auto;
+    }
+    #container h2{
+      text-align: center;
+    }
+    #container .container{
+      margin-top: 30px;
+    }
+    .col img{
+      margin-bottom: 20px;
+    }
+    .imagesContainer{
+      
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 50px;
+}
+    
+  </style>
+  
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fontograph</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="container">
+<h2>Enter your Text</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Enter your prompt</label>
+          <input type="text" class="form-control" id="imgprompt" aria-describedby="emailHelp">
+          <div  class="form-text">We'll fetch the image from OpenAI.</div>
+        </div>
+        
+        <button id="submitbtn" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      
+
+      <div class="svgContainer d-flex">
+    
+        <svg class="d-none" id="loadingGif" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+    <g transform="rotate(0 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(30 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(60 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(90 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(120 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(150 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(180 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(210 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(240 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(270 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(300 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate>
+      </rect>
+    </g><g transform="rotate(330 50 50)">
+      <rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#000000">
+        <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+      </rect>
+    </g>
+    </svg>
+          </div>
+
+      <div class="imagesContainer">
+
+      </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+  <script>
+
+  let submit = document.getElementById("submitbtn")
+  submit.addEventListener('click',(e)=>{
+    e.preventDefault()
+    loadingGif.classList.toggle("d-none")
+    const promptTxt = imgprompt.value;
+    console.log(promptTxt)
+        fetch("http://localhost:8888/generateImages/" + promptTxt)
+        .then(response => response.json())
+       .then(data => {
+         console.log(data);
+         loadingGif.classList.toggle("d-none")
+         const images = data.data;
+         const container = document.querySelector(".imagesContainer");
+         let totalHtml = "";
+
+         images.forEach(image => {
+           let html = `
+           <div class="col-md-4 my-2">
+            <img width="300" src="${image.url}" class="img-responsive">
+        </div>
+        `;
+           totalHtml += html;
+         
+         });
+           container.innerHTML = totalHtml;
+         });
+  })
+
+  </script>
+  
+  </body>
+</html>
