@@ -53,7 +53,9 @@ To use the AI Image Generator, you need an OpenAI API key. You can sign up for a
 Once you have set up the project and obtained the OpenAI API key, you are ready to generate images from text. Run the following command:
 
 
-```python generate_image.py --input_text "A serene lake with mountains in the background."```
+```
+python generate_image.py --input_text "A serene lake with mountains in the background."
+```
 Replace the example text with your desired description. The AI will process the input text and create a stunning image based on it.
 
 ## Supported Image Sizes
