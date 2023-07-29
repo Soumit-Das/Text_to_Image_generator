@@ -1,6 +1,6 @@
 
 # Project Name: AI Image Generator
-Project Logo
+
 
 ## Table of Contents
 - Introduction
